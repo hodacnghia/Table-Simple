@@ -1,0 +1,68 @@
+.footer {
+  background-color: $color-tertiary-dark;
+  font-size: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex: 1;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+
+  }
+
+  &__header {
+    padding: 2rem 0;
+
+    &--content {
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+  }
+
+  &__col {
+    color: $color-grey-dark;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 1rem;
+
+    &:last-child {
+      display: flex;
+      flex: 1;
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    @include respond(tab-port) {
+      width: 45%;
+      flex: none;
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  &__contact {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: $default-font-size;
+
+    .icon:nth-child(n) {
+      padding: 0 0.5rem;
+    }
+  }
+}

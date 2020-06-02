@@ -1,0 +1,27 @@
+.button {
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  min-width: 100px;
+  color: white;
+  font-size: 1.5rem;
+
+  &--outline {
+    background: transparent;
+    border: 1px solid white;
+  }
+
+  &--primary {
+    background: $color-tertiary;
+    border: 1px solid $color-tertiary;
+  }
+
+  &--danger {
+    border: 1px solid red;
+    background: red;
+  }
+}

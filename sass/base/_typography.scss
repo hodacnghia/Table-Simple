@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: black;
+}
+
+.paragraph {
+  color: $color-grey-dark;
+  font-size: $default-font-size;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.paragraph--light {
+  color: white;
+}

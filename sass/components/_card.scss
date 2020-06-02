@@ -1,0 +1,30 @@
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  // min-width: 200px;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: $color-grey-dark;
+
+  &__header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: $default-font-size;
+
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+}

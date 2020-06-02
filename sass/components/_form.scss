@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  &__group {
+    display: flex;
+    flex: 1
+  }
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.7rem 1rem;
+    border-radius: 2px;
+    background-color: $color-tertiary-dark2;
+    border: none;
+    width: 100%;
+
+    // transition: all 0.3s;
+    &::placeholder {
+      color: white
+    }
+  }
+
+  &__radio-group {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: flex;
+      align-items: center;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+  }
+
+
+  &__radio-label {
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,41 @@
+.section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+
+  &__header {
+    font-size: 3rem;
+    padding: 2.5rem 10rem;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:after {
+        padding-top: 1rem;
+        width: 30px;
+        display: block;
+        border-bottom: 2px solid $color-tertiary;
+        content: "";
+      }
+    }
+
+    &--start {
+      align-items: flex-start;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    // padding-bottom: 1rem;
+  }
+
+  &--primary {
+    background: $color-tertiary;
+  }
+}
