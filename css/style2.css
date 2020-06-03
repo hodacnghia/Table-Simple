@@ -310,6 +310,7 @@ body {
     color: #ffd900; }
   .icon__trash:hover {
     animation: 0.5s  shake;
+    cursor: pointer;
     animation-iteration-count: infinite; }
 
 .number--negative {

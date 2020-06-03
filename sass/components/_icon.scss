@@ -25,6 +25,7 @@
 
   &__trash:hover {
     animation: 0.5s  shake;
+    cursor: pointer;
     animation-iteration-count: infinite;
   }
 }
