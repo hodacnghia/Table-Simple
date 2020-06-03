@@ -1,10 +1,30 @@
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .icon {
   color: $color-primary;
+
   &--large {
     font-size: 3rem !important;
   }
   &__star {
-  color: $color-yellow;
+    color: $color-yellow;
+  }
 
+  &__trash:hover {
+    animation: 0.5s  shake;
+    animation-iteration-count: infinite;
   }
 }

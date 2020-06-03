@@ -7,7 +7,6 @@
 }
 
 html {
-
   font-size: 75%; //1 rem = 10px; 10px/16px = 62.5%
 
   @include respond(tab-land) {
@@ -30,5 +29,5 @@ body {
 }
 
 a {
-  color: red;
+  color: $color-primary-light;
 }

@@ -15,79 +15,85 @@
   </head>
   <body>
     <div class="navbar">
-      <a class="navbar__title">
-        <img
-          src="https://cinnamon.is/wp-content/themes/Cinnamon-2017/images/logo.png"
-          alt="cinnamon"
-          width="195"
-          height="34"
-        />
-      </a>
-      <div class="navbar__menu">
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">PRODUCT</a>
+      <div class="navbar__container">
+        <a class="navbar__title">
+          <img
+            src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/logo.png"
+            alt="cinnamon"
+            width="195"
+            height="34"
+          />
+        </a>
+        <div class="navbar__menu">
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">PRODUCT</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">SEMINAR</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">IDEAS</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">NEWS</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">COMPANY</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">RECRUITING</a>
+          </div>
+          <div class="navbar__item">
+            <a href="#" class="navbar__link">CONTACT</a>
+          </div>
         </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">SEMINAR</a>
-        </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">IDEAS</a>
-        </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">NEWS</a>
-        </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">COMPANY</a>
-        </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">RECRUITING</a>
-        </div>
-        <div class="navbar__item">
-          <a href="#" class="navbar__link">CONTACT</a>
-        </div>
-      </div>
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <div class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
 
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">PRODUCT </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">SEMINAR </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">IDEAS </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">NEWS </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">COMPANY </a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">RECRUITING</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- <div class="navbar__item navbar__link navbar__item navbar__link--highlight">Sign up free</div> -->
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">PRODUCT </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">SEMINAR </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">IDEAS </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">NEWS </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">COMPANY </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">RECRUITING</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- <div class="navbar__item navbar__link navbar__item navbar__link--highlight">Sign up free</div> -->
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <div class="section__header">
+      <!-- <div class="section__header">
         <div class="section__header-content">
           Stage 1
         </div>
-      </div>
+      </div> -->
       <div class="section__content">
         <table class="table">
           <thead>
@@ -114,9 +120,7 @@
             <tr class="table__row">
               <td class="table__cell table__cell--content">1</td>
               <td class="table__cell table__cell--content">Nghia Ho</td>
-              <td
-                class="table__cell table__cell--content table__cell--right"
-              >
+              <td class="table__cell table__cell--content table__cell--right">
                 1,234
               </td>
               <td class="table__cell table__cell--content">
@@ -130,7 +134,7 @@
                 <i class="fas fa-star icon__star"></i>
               </td>
               <td class="table__cell table__cell--content">
-                <i class="fas fa-trash icon"></i>
+                <i class="fas fa-trash icon icon__trash"></i>
               </td>
             </tr>
             <tr class="table__row">
@@ -149,7 +153,7 @@
                 <i class="fas fa-star icon__star"></i>
               </td>
               <td class="table__cell table__cell--content">
-                <i class="fas fa-trash icon"></i>
+                <i class="fas fa-trash icon icon__trash"></i>
               </td>
             </tr>
             <tr class="table__row">
@@ -167,13 +171,15 @@
                 <i class="fas fa-star icon__star"></i>
               </td>
               <td class="table__cell table__cell--content">
-                <i class="fas fa-trash icon"></i>
+                <i class="fas fa-trash icon icon__trash"></i>
               </td>
             </tr>
             <tr class="table__row">
               <td class="table__cell table__cell--content">4</td>
               <td class="table__cell table__cell--content">John</td>
-              <td class="table__cell table__cell--content table__cell--right  number--negative">
+              <td
+                class="table__cell table__cell--content table__cell--right number--negative"
+              >
                 -1
               </td>
               <td class="table__cell table__cell--content">
@@ -185,7 +191,7 @@
                 class="table__cell table__cell--content table__cell--center"
               ></td>
               <td class="table__cell table__cell--content">
-                <i class="fas fa-trash icon"></i>
+                <i class="fas fa-trash icon icon__trash"></i>
               </td>
             </tr>
           </tbody>
@@ -193,128 +199,24 @@
         <div class="user__action">
           <button class="button button--outline">Edit</button>
           <div class="space"></div>
-          <button class="button ">Ok</button>
+          <button class="button">Ok</button>
         </div>
-        <!-- <button class="button">
-          Edit
-        </button>
-        <button class="button button--danger">
-          Ok
-        </button> -->
       </div>
     </div>
     <div class="footer">
-      <div class="footer__col">
-        <div class="footer__header">
-          <div class="footer__header--content">
-            About Us
-          </div>
-          <div class="line"></div>
+      <div class="footer__container">
+        <div class="footer__col">
+          <h3 class="footer__row">
+            Extend human potential
+            <br />by eliminating repetitive tasks
+          </h3>
+          <h4 class="footer__row">
+            At Cinnamon we are working to make a world<br />
+            where human creativity can flourish<br />
+            by using our AI technology to replace all the repetitive,<br />
+            mind-numbing tasks that take place today.
+          </h4>
         </div>
-        <div class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
-        </div>
-        <div class="footer__header">
-          <div class="line"></div>
-        </div>
-        <div class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit All rights
-          Peserverd
-        </div>
-      </div>
-      <div class="footer__col">
-        <div class="footer__header">
-          <div class="footer__header--content">
-            Our Address
-          </div>
-          <div class="line"></div>
-        </div>
-        <div class="footer__row">
-          <i class="material-icons icon">location_on</i>
-          <div class="space"></div>
-          Real Project For Real Solutions
-        </div>
-        <div class="footer__row">
-          <i class="material-icons icon">local_phone</i>
-          <div class="space"></div>
-          Real Project For Real Solutions
-        </div>
-        <div class="footer__row">
-          <i class="material-icons icon">mail</i>
-          <div class="space"></div>
-          Real Project For Real Solutions
-        </div>
-        <div class="footer__row">
-          <i class="material-icons icon">language</i>
-          <div class="space"></div>
-          Real Project For Real Solutions
-        </div>
-        <div class="footer__header">
-          <div class="footer__header--content">
-            Connect with Us
-          </div>
-          <div class="line"></div>
-        </div>
-        <div class="footer__contact">
-          <i class="fab fa-facebook-f icon"></i>
-          <i class="fab fa-twitter icon"></i>
-          <i class="fab fa-codepen icon"></i>
-          <i class="fab fa-github icon"></i>
-        </div>
-      </div>
-      <div class="footer__col">
-        <div class="footer__header">
-          <div class="footer__header--content">
-            Drop us a line
-          </div>
-          <div class="line"></div>
-        </div>
-        <form class="form" action="">
-          <div class="form__group">
-            <input
-              placeholder="Name"
-              type="text"
-              class="form__input"
-              name="fname"
-            />
-          </div>
-
-          <div class="form__group">
-            <div class="form__radio-group">
-              <input type="radio" name="gender" value="male" id="male" />
-              <label for="male" class="form__radio-label"> Male</label>
-            </div>
-            <div class="form__radio-group">
-              <input type="radio" id="female" name="gender" value="female" />
-              <label for="female" class="form__radio-label">Female</label>
-            </div>
-          </div>
-
-          <div class="form__group">
-            <input
-              placeholder="Email"
-              type="text"
-              class="form__input"
-              name="fname"
-            /><br />
-          </div>
-          <div class="form__group">
-            <textarea
-              placeholder="Message"
-              class="form__input"
-              rows="4"
-              cols="50"
-            ></textarea>
-          </div>
-          <div class="form__group">
-            <button class="button ">
-              Send message
-            </button>
-          </div>
-        </form>
       </div>
     </div>
   </body>

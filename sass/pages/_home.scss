@@ -4,6 +4,11 @@
     padding-top: 2rem;
     display: flex;
     justify-content: flex-end;
+    background: $color-white;
+    padding-right: 2rem;
+    @include respond(tab-port) {
+      justify-content: center;
+    }
   }
 }
 
