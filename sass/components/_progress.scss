@@ -6,22 +6,31 @@
   vertical-align: middle;
   background-color: $color-grey;
   border-radius: 100px;
+
   &__complete {
     background-color: $color-tertiary;
     border-radius: 100px;
     transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 8s;
     height: 0.8rem;
+
+    @include respond(tab-port) {
+      height: 0.5rem;
+    }
+
     &--high {
       background-color: $color-secondary;
     }
+
     &--mid {
       background-color: $color-yellow;
     }
+
     &--low {
       background-color: $color-red;
     }
   }
 }
+
 @for $i from 0 through 10 {
   .progress__complete-#{$i} {
     @include getColorProgress($i);
