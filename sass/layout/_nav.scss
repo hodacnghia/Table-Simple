@@ -111,7 +111,7 @@
   &__nav {
     height: 100vh;
     position: fixed;
-    top: 140;
+    top: 170;
     left: 0;
     z-index: 1500;
     background-color: $color-white;
@@ -171,7 +171,7 @@
   //ICON
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 
     &,
     &::before,
