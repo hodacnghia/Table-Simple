@@ -1,17 +1,30 @@
 .progress {
-  position: relative;
+  // position: relative;
   display: inline-block;
   width: 100%;
   overflow: hidden;
   vertical-align: middle;
-  background-color: $color-primary;
+  background-color: $color-grey;
   border-radius: 100px;
   &__complete {
-    position: relative;
-  background-color: $color-tertiary;
+    background-color: $color-tertiary;
     border-radius: 100px;
-    transition: all .4s cubic-bezier(.08,.82,.17,1) 0s;
-    width: 50%;
+    transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 8s;
     height: 0.8rem;
+    &--high {
+      background-color: $color-secondary;
+    }
+    &--mid {
+      background-color: $color-yellow;
+    }
+    &--low {
+      background-color: $color-red;
+    }
+  }
+}
+@for $i from 0 through 10 {
+  .progress__complete-#{$i} {
+    @include getColorProgress($i);
+    width: #{$i * 10%};
   }
 }

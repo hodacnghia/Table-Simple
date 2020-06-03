@@ -24,3 +24,16 @@
     } //1800
   }
 }
+
+@mixin getColorProgress($level) {
+  @if $level <3 {
+    background-color: $color-red;
+  }
+  @else if $level <7 {
+    background-color: $color-yellow;
+  }
+
+  @else if $level < 10  {
+    background-color: $color-green;
+  }
+}

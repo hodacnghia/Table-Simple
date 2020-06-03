@@ -7,12 +7,18 @@
   padding: 1rem 2rem;
   border-radius: 3px;
   min-width: 100px;
-  color: white;
+  color: $color-white;
   font-size: 1.5rem;
+  background: linear-gradient(180deg, $color-primary, $color-secondary);
+  border: 0px solid $color-primary-dark;
 
   &--outline {
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid $color-primary-dark;
+    background: linear-gradient(180deg, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    // make fill color to transparent so that masked background color will be shown
+    -webkit-text-fill-color: transparent;
   }
 
   &--primary {
@@ -21,7 +27,7 @@
   }
 
   &--danger {
-    border: 1px solid red;
     background: red;
+    color: $color-white;
   }
 }

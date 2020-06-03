@@ -16,9 +16,9 @@
 
       &:after {
         padding-top: 1rem;
-        width: 30px;
+        width: 50px;
         display: block;
-        border-bottom: 2px solid $color-tertiary;
+        border-bottom: 2px solid $color-primary;
         content: "";
       }
     }
@@ -32,7 +32,9 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    // padding-bottom: 1rem;
+    padding: 2rem;
+    align-items: stretch;
+
   }
 
   &--primary {

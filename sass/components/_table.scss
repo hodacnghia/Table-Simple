@@ -1,21 +1,45 @@
 .table {
+  border: 1px solid $color-border;
+  border-spacing: 0px;
+  width: 100%;
+  &__row {
+    &:not(:last-child) td{
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
   &__cell {
     padding: 1.6rem;
+    text-align: left;
+
     &--header {
-      color: $color-tertiary-dark2;
+      color: $color-tertiary;
       font-weight: 500;
       text-align: left;
-      transition:  background-color .3s ease;
-      border-bottom: 1px solid #f0f0f0;
-      // background: #fafafa;
+      transition: background-color 0.3s ease;
+      background: $color-grey-light2;
+      font-size: 1.8rem;
     }
     &--content {
       color: $color-grey-dark;
       box-sizing: border-box;
-      border-bottom: 1px solid #e8e8e8;
-      background: #FFF;
+      background: $color-white;
       text-align: left;
+      font-size: $default-font-size;
+
+    }
+    &--right {
+      text-align: right;
+    }
+    &--center {
+      text-align: center;
     }
   }
+}
 
+$cellPer: 5 10 20 30 40 50 60 70 80 90 100;
+@each $per in $cellPer {
+  .table__cell-#{$per} {
+    width: #{$per * 1%};
+  }
 }
