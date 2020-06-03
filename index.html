@@ -24,13 +24,27 @@
         />
       </a>
       <div class="navbar__menu">
-        <div class="navbar__item navbar__link">PRODUCT</div>
-        <div class="navbar__item navbar__link">SEMINAR</div>
-        <div class="navbar__item navbar__link">IDEAS</div>
-        <div class="navbar__item navbar__link">NEWS</div>
-        <div class="navbar__item navbar__link">COMPANY</div>
-        <div class="navbar__item navbar__link">RECRUITING</div>
-        <div class="navbar__item navbar__link">CONTACT</div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">PRODUCT</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">SEMINAR</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">IDEAS</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">NEWS</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">COMPANY</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">RECRUITING</a>
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link">CONTACT</a>
+        </div>
       </div>
       <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -64,7 +78,6 @@
             </li>
           </ul>
         </nav>
-
         <!-- <div class="navbar__item navbar__link navbar__item navbar__link--highlight">Sign up free</div> -->
       </div>
     </div>
@@ -77,20 +90,38 @@
       </div>
       <div class="section__content">
         <table>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Point</th>
-            <th>Level</th>
-            <th>Star</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Mike</td>
-            <td>1230</td>
-            <td>8</td>
-            <td>3 star</td>
-          </tr>
+          <thead>
+            <tr>
+              <th class="table__cell table__cell--header">#</th>
+              <th class="table__cell table__cell--header">Name</th>
+              <th class="table__cell table__cell--header">Point</th>
+              <th class="table__cell table__cell--header">Level</th>
+              <th class="table__cell table__cell--header">Star</th>
+              <th class="table__cell table__cell--header"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__cell table__cell--content">1</td>
+              <td class="table__cell table__cell--content">Mike</td>
+              <td class="table__cell table__cell--content">1230</td>
+              <td class="table__cell table__cell--content">
+                <div class="progress">
+                  <div
+                    class="progress__complete"
+                  ></div>
+                </div>
+              </td>
+              <td class="table__cell table__cell--content">
+                <i class="fas fa-star icon__star"></i>
+                <i class="fas fa-star icon__star"></i>
+                <i class="fas fa-star icon__star"></i>
+              </td>
+              <td class="table__cell table__cell--content">
+                <i class="fas fa-trash icon"></i>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

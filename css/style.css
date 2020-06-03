@@ -9,16 +9,16 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 75%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 75%; } }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 87.5%; } }
 
 body {
   min-width: 400px; }
@@ -44,6 +44,22 @@ body {
 .paragraph--light {
   color: white; }
 
+.progress {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  background-color: #eee;
+  border-radius: 100px; }
+  .progress__complete {
+    position: relative;
+    background-color: #0a9fbf;
+    border-radius: 100px;
+    transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+    width: 50%;
+    height: 0.8rem; }
+
 .button {
   padding: 1rem 2rem;
   border-radius: 3px;
@@ -62,6 +78,21 @@ body {
   .button--danger {
     border: 1px solid red;
     background: red; }
+
+.table__cell {
+  padding: 1.6rem; }
+  .table__cell--header {
+    color: #052142;
+    font-weight: 500;
+    text-align: left;
+    transition: background-color .3s ease;
+    border-bottom: 1px solid #f0f0f0; }
+  .table__cell--content {
+    color: #777;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+    background: #FFF;
+    text-align: left; }
 
 .form {
   display: flex;
@@ -151,6 +182,8 @@ body {
   color: #0a9fbf; }
   .icon--large {
     font-size: 3rem !important; }
+  .icon__star {
+    color: #ffd900; }
 
 .line {
   height: 1px;
@@ -223,8 +256,7 @@ body {
     .navbar__item:not(:last-child) {
       margin-right: 2rem; }
   .navbar__link:link, .navbar__link:visited {
-    color: #fff;
-    background: linear-gradient(180deg, #0a9fbf, #3ebb93);
+    color: #052142;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -253,19 +285,6 @@ body {
     @media only screen and (max-width: 37.5em) {
       .navbar__menu {
         flex: 0.8; } }
-  .navbar__button {
-    height: 7rem;
-    width: 7rem;
-    text-align: center;
-    cursor: pointer; }
-    @media only screen and (max-width: 56.25em) {
-      .navbar__button {
-        top: 4rem;
-        right: 4rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .navbar__button {
-        top: 3rem;
-        right: 3rem; } }
   .navbar__icon {
     position: relative;
     margin-top: 3.5rem; }
@@ -302,7 +321,6 @@ body {
   .navigation__button {
     background-color: #fff;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer; }
     @media only screen and (max-width: 56.25em) {
@@ -338,7 +356,7 @@ body {
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
-    color: #000;
+    color: #052142;
     text-decoration: none;
     text-transform: uppercase;
     background-size: 230%;

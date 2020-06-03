@@ -1,0 +1,17 @@
+.progress {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+  background-color: $color-primary;
+  border-radius: 100px;
+  &__complete {
+    position: relative;
+  background-color: $color-tertiary;
+    border-radius: 100px;
+    transition: all .4s cubic-bezier(.08,.82,.17,1) 0s;
+    width: 50%;
+    height: 0.8rem;
+  }
+}

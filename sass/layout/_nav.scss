@@ -8,7 +8,6 @@
   font-size: $default-font-size;
   background: $color-white;
 
-  &__title {}
 
   &__item {
     color: $color-tertiary-dark2;
@@ -25,8 +24,7 @@
 
     &:link,
     &:visited {
-      color: $color-white;
-      background: linear-gradient(180deg, #0a9fbf, #3ebb93);
+      color:$color-tertiary-dark2;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
@@ -72,29 +70,6 @@
 
   }
 
-  &__button {
-    // background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
-    // position: fixed;
-    // top: 6rem;
-    // right: 6rem;
-    // border-radius: 50%;
-    // z-index: 2000;
-    // box-shadow: 0 1rem 3rem rgba($color-black, .1);
-    text-align: center;
-    cursor: pointer;
-
-    @include respond(tab-port) {
-      top: 4rem;
-      right: 4rem;
-    }
-
-    @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
-    }
-  }
 
   //ICON
   &__icon {
@@ -156,7 +131,6 @@
   &__button {
     background-color: $color-white;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
     cursor: pointer;
 
@@ -205,7 +179,7 @@
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: $color-black;
+      color:$color-tertiary-dark2;
       text-decoration: none;
       text-transform: uppercase;
       background-size: 230%;
